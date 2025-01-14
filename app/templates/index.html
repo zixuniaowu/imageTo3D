@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image to 3D Model Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+    <script src="{{ url_for('static', path='/js/three.min.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Image to 3D Model Converter</h1>
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept=".jpg,.jpeg,.png">
+            <button onclick="uploadImage()">Convert to 3D</button>
+        </div>
+        <div id="viewer" class="viewer"></div>
+        <div id="loading" class="loading" style="display: none;">
+            Converting image to 3D model...
+        </div>
+    </div>
+    <script src="{{ url_for('static', path='/js/viewer.js') }}"></script>
+</body>
+</html>

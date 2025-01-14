@@ -1,0 +1,13 @@
+torch
+torchvision
+torchaudio
+fastapi
+python-multipart
+uvicorn
+jinja2
+diffusers
+transformers
+numpy
+Pillow
+einops
+kiui
